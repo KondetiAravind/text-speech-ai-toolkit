@@ -1,0 +1,15 @@
+venv/
+
+generated_audio/
+
+uploads/
+
+__pycache__/
+
+*.pyc
+
+.streamlit/
+
+.env
+
+.DS_Store
