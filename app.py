@@ -215,7 +215,7 @@ with voice_tab:
         )
 
         if "speed" not in st.session_state:
-        st.session_state.speed = 1.0
+            st.session_state.speed = 1.0
         
         speed = st.slider(
             "Speech Speed",
