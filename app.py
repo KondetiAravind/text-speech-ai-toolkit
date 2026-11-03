@@ -214,14 +214,24 @@ with voice_tab:
             key="voice"
         )
 
+        if "speed" not in st.session_state:
+        st.session_state.speed = 1.0
+        
         speed = st.slider(
-            "🎚 Speech Speed (0.5× - 2.0×)",
-            min_value=0.50,
-            max_value=2.00,
-            value=st.session_state.speed,
-            step=0.05,
+            "Speech Speed",
+            min_value=0.5,
+            max_value=2.0,
+            step=0.1,
             key="speed"
         )
+        # speed = st.slider(
+        #     "🎚 Speech Speed (0.5× - 2.0×)",
+        #     min_value=0.50,
+        #     max_value=2.00,
+        #     value=st.session_state.speed,
+        #     step=0.05,
+        #     key="speed"
+        # )
 
     # ------------------------------------------------------
     # RIGHT PANEL - ANALYTICS
